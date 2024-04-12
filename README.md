@@ -22,3 +22,5 @@ javascript:(function(){var container=getContainer();setDisplayStyle(container,'f
 3. 現在，你的 Preview 窗口應該已經擴大到全螢幕，你可以更舒適地使用它來進行 Chat。
 
 請注意，這個改變只會在你當前的標籤頁中生效，並不會永久改變 Coze 的介面設定。也就是說，當你刷新頁面或者在新的標籤頁打開 Coze 時，你需要再次點擊 "Coze Fullscreen Preview" 書籤來擴大 Preview 窗口。
+
+![image](https://i.imgur.com/TYI5JMe.png)
