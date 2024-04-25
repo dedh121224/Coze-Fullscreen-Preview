@@ -16,8 +16,9 @@ This bookmark gadget can enlarge the Preview window, which originally occupied o
 ## 如何安裝 how to install
 
 1. 開啟你的瀏覽器，並進入書籤管理頁面。
-1. Open your browser and enter the bookmark management page.
 2. 創建一個新的書籤，並將以下代碼粘貼到 URL 或位置欄位：
+
+1. Open your browser and enter the bookmark management page.
 2. Create a new bookmark and paste the following code into the URL or location field:
 
 
