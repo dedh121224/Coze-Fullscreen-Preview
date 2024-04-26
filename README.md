@@ -10,24 +10,24 @@ Use buttons to switch freely
 ## Coze Fullscreen Preview 書籤小工具使用指南
 Coze Fullscreen Preview Bookmark Widget User Guide
 
-這個書籤小工具可以將 Coze 的開發介面中原本只佔1/3的 Preview 窗口放大到全螢幕，讓開發者在使用 Preview 進行 Chat 時更為舒適。
+這個書籤小工具可以將 Coze 的開發介面中原本只佔1/3的 Preview 窗口放大到全螢幕，讓開發者在使用 Preview 進行 Chat 時更為舒適。  
 This bookmark gadget can enlarge the Preview window, which originally occupied only 1/3 of Coze's development interface, to full screen, making developers more comfortable when using Preview for Chat.
 
 ## 如何安裝 how to install
 
-1. 開啟你的瀏覽器，並進入書籤管理頁面。
-2. 創建一個新的書籤，並將以下代碼粘貼到 URL 或位置欄位：
+1. 開啟你的瀏覽器，並進入書籤管理頁面。  
+2. 創建一個新的書籤，並將以下代碼粘貼到 URL 或位置欄位：  
 
-1. Open your browser and enter the bookmark management page.
-2. Create a new bookmark and paste the following code into the URL or location field:
+1. Open your browser and enter the bookmark management page.  
+2. Create a new bookmark and paste the following code into the URL or location field:  
 
 
 ```javascript
 javascript:(function(){var c=document.getElementsByClassName('sidesheet-container')[0];c.style.display='flex';c.style.flexDirection='row';var d=c.children;function setupInitialWidths(d){for(var i=0;i<d.length-1;i++){d[i].style.flexBasis='33%';d[i].style.flexShrink='0';d[i].style.flexGrow='1';}}function hideAllDivsExceptLast(d){for(var i=0;i<d.length-1;i++){d[i].style.display='none';}}function getLastDiv(d){return d[d.length-1];}function getFirstChild(e){return e.children[0];}setupInitialWidths(d);hideAllDivsExceptLast(d);var lastDiv=getLastDiv(d);lastDiv.style.flexGrow='1';var firstChild=getFirstChild(lastDiv);firstChild.style.display='none';var arr=['Prompt','Skills'];for(var i=0;i<2;i++){!function(i){var b=document.createElement('button');b.innerHTML=arr[i];b.className='toggle-button';b.style.position='absolute';b.style.top='0px';b.style.left=(i*60)+'px';b.style.zIndex='1000';b.onclick=function(){var div=d[i];var isVisible=div.style.display!=='none';div.style.display=isVisible?'none':'flex';div.style.width=isVisible?'0':'';};c.appendChild(b);}(i);}})();
 ```
 
-3. 給書籤取名為 "Coze Fullscreen Preview"。
-3. Name the bookmark "Coze Fullscreen Preview".
+3. 給書籤取名為 "Coze Fullscreen Preview"。  
+3. Name the bookmark "Coze Fullscreen Preview".  
 
 
 ## 如何使用 how to use
